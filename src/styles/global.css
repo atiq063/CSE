@@ -229,7 +229,7 @@ strong {
 
 .hero {
   position: relative;
-  min-height: calc(100vh - 129px);
+  min-height: 460px;
   background-position: center;
   background-size: cover;
   color: #fff;
@@ -243,7 +243,7 @@ strong {
 }
 
 .hero-content {
-  padding-block: 80px 120px;
+  padding-block: 72px 92px;
 }
 
 .eyebrow {
@@ -258,8 +258,8 @@ strong {
 .hero h1 {
   max-width: 1020px;
   margin: 0;
-  font-size: clamp(2.7rem, 6vw, 5.4rem);
-  line-height: 0.98;
+  font-size: clamp(2.4rem, 5vw, 4.7rem);
+  line-height: 1;
   font-weight: 800;
 }
 
@@ -2427,7 +2427,7 @@ time {
   }
 
   .hero {
-    min-height: 720px;
+    min-height: 460px;
   }
 
   .division-tabs,
@@ -2527,7 +2527,7 @@ time {
   }
 
   .hero {
-    min-height: 560px;
+    min-height: 420px;
   }
 
   .hero h1 {
@@ -2536,7 +2536,7 @@ time {
   }
 
   .hero-content {
-    padding-block: 56px 86px;
+    padding-block: 54px 72px;
   }
 
   .hero p:not(.eyebrow) {
@@ -2765,7 +2765,7 @@ time {
   }
 
   .hero {
-    min-height: 520px;
+    min-height: 400px;
   }
 
   .inner-hero {
