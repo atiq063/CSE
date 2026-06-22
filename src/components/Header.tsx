@@ -6,7 +6,7 @@ type HeaderProps = {
   onNavigate: (page: string) => void;
 };
 
-const implementedPages = new Set(['Home', 'About', 'Divisions', 'Programs', 'Centers']);
+const implementedPages = new Set(['Home', 'About', 'Divisions', 'Programs', 'People', 'Centers']);
 
 export function Header({ activePage, onNavigate }: HeaderProps) {
   const activeNavPage =

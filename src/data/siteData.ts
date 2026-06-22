@@ -43,17 +43,12 @@ export const programDivisions: ProgramDivision[] = [
     heroImage: localAssets.programElectricalEngineering,
     name: 'Computing and Electrical Engineering',
     summary:
-      'Programs in computing, artificial intelligence, data engineering, electrical engineering, cybersecurity, data science, and health management.',
+      'Programs in computing, electrical engineering, cybersecurity, data science, and health management.',
     programs: [
       {
         level: 'Undergraduate',
         title: 'BSc in Computer Engineering',
         image: localAssets.programComputerEngineering,
-      },
-      {
-        level: 'Undergraduate',
-        title: 'BSc in Artificial Intelligence and Data Engineering',
-        image: localAssets.programDataScience,
       },
       {
         level: 'Undergraduate',

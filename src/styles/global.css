@@ -498,8 +498,9 @@ strong {
 
 .division-overview-card dt {
   color: rgba(255, 255, 255, 0.7);
-  font-size: 0.78rem;
+  font-size: 0.7rem;
   font-weight: 700;
+  white-space: nowrap;
   text-transform: uppercase;
 }
 
@@ -1101,28 +1102,123 @@ strong {
 }
 
 .dean-profile {
-  display: grid;
-  grid-template-columns: 0.78fr 1.22fr;
-  gap: 44px;
-  align-items: start;
+  max-width: 1060px;
+  color: var(--color-muted);
 }
 
-.dean-profile img {
+.dean-photo {
+  float: left;
+  width: min(34%, 330px);
+  min-width: 250px;
+  margin: 4px 34px 22px 0;
+}
+
+.dean-photo img {
   width: 100%;
   aspect-ratio: 1;
   object-fit: cover;
+  box-shadow: 0 22px 52px rgba(31, 25, 20, 0.14);
 }
 
-.dean-profile h3 {
+.dean-photo figcaption {
   margin: 18px 0 0;
   color: var(--color-maroon);
   font-size: 1.55rem;
+  font-weight: 800;
 }
 
 .dean-profile p {
   margin: 0 0 18px;
   color: var(--color-muted);
   line-height: 1.75;
+  text-align: justify;
+}
+
+.dean-message-grid {
+  clear: both;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+  margin: 24px 0 28px;
+}
+
+.dean-message-card {
+  padding: 24px;
+  background:
+    linear-gradient(135deg, rgba(122, 31, 61, 0.035), rgba(184, 137, 63, 0.08)),
+    #fff;
+  border: 1px solid rgba(122, 31, 61, 0.12);
+  box-shadow: 0 16px 36px rgba(31, 25, 20, 0.07);
+}
+
+.dean-message-card h4 {
+  margin: 0 0 18px;
+  color: var(--color-maroon);
+  font-size: 1.05rem;
+  text-transform: uppercase;
+}
+
+.dean-program-groups {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.dean-pillars-grid .dean-pillars-list {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px 22px;
+}
+
+.dean-program-groups h5 {
+  margin: 0 0 10px;
+  color: var(--color-ink);
+  font-size: 1rem;
+}
+
+.dean-program-groups ul,
+.dean-pillars-list {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.dean-program-groups li,
+.dean-pillars-list li {
+  position: relative;
+  padding-left: 18px;
+  color: var(--color-muted);
+  line-height: 1.45;
+}
+
+.dean-program-groups li::before,
+.dean-pillars-list li::before {
+  position: absolute;
+  top: 0.62em;
+  left: 0;
+  width: 7px;
+  height: 7px;
+  content: "";
+  background: var(--color-gold);
+}
+
+.dean-signature {
+  display: inline-grid;
+  gap: 4px;
+  margin-top: 4px;
+  padding-left: 18px;
+  border-left: 4px solid var(--color-gold);
+}
+
+.dean-signature strong {
+  color: var(--color-maroon);
+  font-size: 1.12rem;
+}
+
+.dean-signature span {
+  color: var(--color-muted);
+  font-weight: 700;
 }
 
 .division-hero {
@@ -1531,6 +1627,34 @@ strong {
   color: var(--color-maroon) !important;
   font-size: 0.82rem !important;
   text-transform: uppercase;
+}
+
+.people-hero {
+  background-position: center;
+  background-size: cover;
+}
+
+.people-faculty-section {
+  background:
+    linear-gradient(180deg, #fff 0%, #f8f4ed 100%);
+}
+
+.people-tabs {
+  margin-bottom: 42px;
+}
+
+.people-empty-state {
+  padding: 34px;
+  color: var(--color-muted);
+  background: #fff;
+  border: 1px solid rgba(122, 31, 61, 0.14);
+  box-shadow: var(--shadow-soft);
+}
+
+.people-empty-state p {
+  margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.7;
 }
 
 .division-program-detail-section {
@@ -2450,6 +2574,7 @@ time {
   .news-layout,
   .division-heads-grid,
   .dean-profile,
+  .dean-message-grid,
   .dean-layout,
   .footer-top,
   .footer-links {
@@ -2648,6 +2773,7 @@ time {
   .news-layout,
   .division-heads-grid,
   .dean-profile,
+  .dean-message-grid,
   .news-list article,
   .dean-layout,
   .testimonial-grid,
@@ -2688,6 +2814,22 @@ time {
 
   .division-actions .section-action {
     width: 100%;
+  }
+
+  .dean-photo {
+    float: none;
+    width: min(100%, 340px);
+    min-width: 0;
+    margin: 0 0 26px;
+  }
+
+  .dean-profile p {
+    text-align: left;
+  }
+
+  .dean-program-groups,
+  .dean-pillars-grid .dean-pillars-list {
+    grid-template-columns: 1fr;
   }
 
   .division-faculty-grid {

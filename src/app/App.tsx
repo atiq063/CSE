@@ -7,6 +7,7 @@ import { Footer } from '../components/Footer';
 import { Header } from '../components/Header';
 import { Hero } from '../components/Hero';
 import { NewsSection } from '../components/NewsSection';
+import { PeoplePage } from '../components/PeoplePage';
 import { ProgramDetailPage } from '../components/ProgramDetailPage';
 import { ProgramsSection } from '../components/ProgramsSection';
 import { QuoteSection } from '../components/QuoteSection';
@@ -22,6 +23,7 @@ export function App() {
   const showCentersPage = activePage === 'Centers';
   const showDivisionsPage = activePage === 'Divisions';
   const showDivisionPage = activePage === 'Division';
+  const showPeoplePage = activePage === 'People';
   const showProgramDetailPage = activePage === 'ProgramDetail';
   const selectedDivision =
     programDivisions.find((division) => division.id === selectedDivisionId) ?? programDivisions[0];
@@ -51,6 +53,11 @@ export function App() {
     setActivePage('Division');
   };
 
+  const openFacultyForDivision = (divisionId: string) => {
+    setSelectedDivisionId(divisionId);
+    setActivePage('People');
+  };
+
   const openProgramDetail = (program: Program) => {
     if (!program.detailId) {
       return;
@@ -73,6 +80,11 @@ export function App() {
           <AboutPage />
         ) : showCentersPage ? (
           <CentersPage />
+        ) : showPeoplePage ? (
+          <PeoplePage
+            selectedDivisionId={selectedDivisionId}
+            onSelectDivision={setSelectedDivisionId}
+          />
         ) : showDivisionsPage ? (
           <DivisionsOverview
             onExplorePrograms={openProgramsForDivision}
@@ -90,6 +102,7 @@ export function App() {
             division={selectedDivision}
             onBackToDivisions={() => setActivePage('Divisions')}
             onOpenProgram={openProgramDetail}
+            onViewFaculty={() => openFacultyForDivision(selectedDivision.id)}
             onViewAllPrograms={() => openProgramsForDivision(selectedDivision.id)}
           />
         ) : showProgramsPage ? (

@@ -158,9 +158,61 @@ export const aboutPage = {
     name: 'Dr. Mounir Hamdi',
     image: localAssets.aboutDean,
     fallbackImage: assets.deanVideo,
-    highlights: [
-      'Welcome to the College of Science and Engineering (CSE) at Hamad Bin Khalifa University (HBKU). Our aim is to be a world-class multidisciplinary college with significant positive impact on Qatar, the region, and globally in science, engineering, and technology. This is being accomplished by advancing knowledge, technology transfer, and nurturing technically grounded leaders and innovators to serve societal needs with a focus on an integrated multi-disciplinary curriculum and multi-disciplinary research in science, engineering, and technology. The motto of our college is that we “strive for excellence” in any thing we do in a networked society and a rapidly changing world. Within a short period of time, we were able to build excellent educational and research programs, recruit world-class faculty, attract some of the best students to our college, and establish strong collaborations with world-class universities and research institutes, and a plethora of government and industrial entities.',
-      'Whether you are a student aspiring to advance your career as well as the world we live in, or a faculty seeking to conduct ground-breaking research, or a government entity or an industrial company seeking mutually beneficial collaboration, there is no better place to start than the College of Science and Engineering at HBKU. I invite you to join us on this exciting and rewarding journey as we shape a better tomorrow for Qatar and the rest of the world together.'
+    opening:
+      'Welcome to the College of Science and Engineering (CSE) at Hamad Bin Khalifa University (HBKU). Our aim is to be a world-class multidisciplinary college with significant positive impact on Qatar, the region, and globally in science, engineering, and technology. This is being accomplished by advancing knowledge, technology transfer, and nurturing technically grounded leaders and innovators to serve societal needs with a focus on an integrated multi-disciplinary curriculum and multi-disciplinary research in science, engineering, and technology. The motto of our college is that we “strive for excellence” in any thing we do in a networked society and a rapidly changing world. Within a short period of time, we were able to build excellent educational and research programs, recruit world-class faculty, attract some of the best students to our college, and establish strong collaborations with world-class universities and research institutes, and a plethora of government and industrial entities. In particular, to cope with complex global problems and challenges, there is an increasing demand to combine different disciplines and to propose innovative solutions. As a result, the College of Science and Engineering has established three multidisciplinary divisions with 14 BS, MS, and PhD unique, multidisciplinary, and highly-sought-after programs:',
+    programGroups: [
+      {
+        division: 'Division of Computing and Electrical Engineering',
+        programs: [
+          'BSc in Computer Engineering',
+          'BSc in Electrical Engineering',
+          'MSc in Cybersecurity',
+          'MSc in Data Science and Engineering',
+          'MIS in Health Management',
+          'MDA in Health Management',
+        ],
+      },
+      {
+        division: 'Division of Mechanical and Industrial Engineering',
+        programs: [
+          'BSc in Mechanical Engineering',
+          'MSc in Logistics and Supply Chain Management',
+          'PhD in Logistics and Supply Chain Management',
+        ],
+      },
+      {
+        division: 'Division of Chemical and Sustainability Engineering',
+        programs: [
+          'BSc in Chemical Engineering',
+          'MSc in Sustainable Energy',
+          'MSc in Sustainable Environment',
+          'PhD in Sustainable Energy',
+          'PhD in Sustainable Environment',
+        ],
+      },
     ],
+    afterPrograms: [
+      'We have already graduated a number of students from these programs. Our students have been awarded prestigious national and international awards, have published top research papers, have been employed in all governmental and economic sectors of our society contributing to Qatar’s development, and even successfully started up their own companies. Our BS in Computer Engineering program is in the process of being accredited by the Accreditation Board for Engineering and Technology (ABET).',
+      'Our faculty, scientists, engineers, and students work on state-of-the-art research areas that are centered on the following key research pillars:',
+    ],
+    researchPillars: [
+      'Sensing, Communication, and Networking',
+      'Cybersecurity',
+      'Artificial Intelligence and Data Analytics',
+      'Health and Human-Centered Technologies',
+      'Energy and Resources',
+      'Water, Food, and Environment',
+      'Logistic and Supply Chain Management',
+      'Quantum Computing',
+    ],
+    closing: [
+      'The College has significantly contributed to the advancement of these research pillars through the 100s of MS/PhD theses being supervised, the integration of these research areas within our academic courses, our international research publications in the most prestigious venues, numerous patents filed and granted, our funded research projects from funding agencies, government entities, and industrial companies, and our active technology transfer activities. In fact, within a short period of time, the College of Science and Engineering compares favorably in terms of quality and quantity of research as well as research funding per faculty with some of the best universities in the region and the world.',
+      'Our college also makes significant professional service contributions to our society and to numerous professional organizations. This is done through training, workshops, conferences, webinars, consultancy, technology transfer, technical journals and books editorships, and memberships in technical program committees, community-reach-out, and advisory roles in many governmental and industrial taskforces.',
+      'Whether you are a student aspiring to advance your career as well as the world we live in, or a faculty seeking to conduct ground-breaking research, or a government entity or an industrial company seeking mutually beneficial collaboration, there is no better place to start than the College of Science and Engineering at HBKU. I invite you to join us on this exciting and rewarding journey as we shape a better tomorrow for Qatar and the rest of the world together.',
+    ],
+    signature: {
+      name: 'Mounir Hamdi',
+      title: 'Professor and Founding Dean',
+    },
   },
 };

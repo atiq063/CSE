@@ -16,7 +16,7 @@ export function CentersPage() {
           </div>
           <div className="centers-hero-card" aria-label="CSE centers count">
             <span>{centers.length}</span>
-            <p>Active CSE Centers</p>
+            <p>CSE Centers</p>
           </div>
         </div>
       </div>
@@ -46,7 +46,7 @@ export function CentersPage() {
                   </div>
                   <p className="eyebrow">CSE Center</p>
                   <h3>{center.name}</h3>
-                  <p className="center-focus">{center.focus}</p>
+                  {center.focus && <p className="center-focus">{center.focus}</p>}
                   <p>{center.description}</p>
 
                   <div className="center-themes" aria-label={`${center.shortName} research themes`}>

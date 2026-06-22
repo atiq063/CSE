@@ -180,7 +180,7 @@ export function AboutPage() {
         <div className="container">
           <SectionHeader title="Dean’s Message" />
           <div className="dean-profile">
-            <div>
+            <figure className="dean-photo">
               <img
                 src={aboutPage.dean.image}
                 alt={aboutPage.dean.name}
@@ -188,12 +188,45 @@ export function AboutPage() {
                   event.currentTarget.src = aboutPage.dean.fallbackImage;
                 }}
               />
-              <h3>{aboutPage.dean.name}</h3>
+              <figcaption>{aboutPage.dean.name}</figcaption>
+            </figure>
+            <p>{aboutPage.dean.opening}</p>
+            <div className="dean-message-grid">
+              <div className="dean-message-card">
+                <h4>Academic programs</h4>
+                <div className="dean-program-groups">
+                  {aboutPage.dean.programGroups.map((group) => (
+                    <div key={group.division}>
+                      <h5>{group.division}</h5>
+                      <ul>
+                        {group.programs.map((program) => (
+                          <li key={program}>{program}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  ))}
+                </div>
+              </div>
             </div>
-            <div>
-              {aboutPage.dean.highlights.map((highlight) => (
-                <p key={highlight}>{highlight}</p>
-              ))}
+            {aboutPage.dean.afterPrograms.map((paragraph) => (
+              <p key={paragraph}>{paragraph}</p>
+            ))}
+            <div className="dean-message-grid dean-pillars-grid">
+              <div className="dean-message-card">
+                <h4>Research pillars</h4>
+                <ul className="dean-pillars-list">
+                  {aboutPage.dean.researchPillars.map((pillar) => (
+                    <li key={pillar}>{pillar}</li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+            {aboutPage.dean.closing.map((paragraph) => (
+              <p key={paragraph}>{paragraph}</p>
+            ))}
+            <div className="dean-signature">
+              <strong>{aboutPage.dean.signature.name}</strong>
+              <span>{aboutPage.dean.signature.title}</span>
             </div>
           </div>
         </div>

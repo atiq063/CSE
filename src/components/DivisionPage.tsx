@@ -7,25 +7,13 @@ type DivisionPageProps = {
   division: ProgramDivision;
   onBackToDivisions: () => void;
   onOpenProgram: (program: Program) => void;
+  onViewFaculty: () => void;
   onViewAllPrograms: () => void;
 };
 
 type DivisionResearchProps = {
   research: NonNullable<(typeof divisionDetails)[string]['research']>;
 };
-
-type DivisionFacultyProps = {
-  faculty: NonNullable<(typeof divisionDetails)[string]['faculty']>;
-};
-
-function getInitials(name: string) {
-  return name
-    .split(' ')
-    .filter(Boolean)
-    .slice(0, 2)
-    .map((part) => part[0])
-    .join('');
-}
 
 function DivisionResearchAreas({ research }: DivisionResearchProps) {
   const [selectedAreaId, setSelectedAreaId] = useState(research.areas[0]?.id);
@@ -80,50 +68,11 @@ function DivisionResearchAreas({ research }: DivisionResearchProps) {
   );
 }
 
-function DivisionFaculty({ faculty }: DivisionFacultyProps) {
-  return (
-    <section className="section division-faculty">
-      <div className="container">
-        <div className="division-faculty-header">
-          <div>
-            <p className="eyebrow">Faculty</p>
-            <h2>Faculty Profiles</h2>
-          </div>
-          <p>{faculty.intro}</p>
-        </div>
-
-        <div className="division-faculty-grid">
-          {faculty.members.map((member) => (
-            <article className="division-faculty-card" key={member.email}>
-              {member.image ? (
-                <img src={member.image} alt={member.name} />
-              ) : (
-                <div className="faculty-initials" aria-hidden="true">
-                  {getInitials(member.name)}
-                </div>
-              )}
-              <div>
-                <p>{member.title}</p>
-                <h3>{member.name}</h3>
-                <a href={`mailto:${member.email}`}>{member.email}</a>
-                {member.profileUrl && (
-                  <a className="faculty-profile-link" href={member.profileUrl} target="_blank" rel="noreferrer">
-                    View profile
-                  </a>
-                )}
-              </div>
-            </article>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-}
-
 export function DivisionPage({
   division,
   onBackToDivisions,
   onOpenProgram,
+  onViewFaculty,
   onViewAllPrograms,
 }: DivisionPageProps) {
   const detail = divisionDetails[division.id];
@@ -179,6 +128,9 @@ export function DivisionPage({
             <button type="button" className="section-action" onClick={onViewAllPrograms}>
               View Programs
             </button>
+            <button type="button" className="section-action" onClick={onViewFaculty}>
+              Faculty
+            </button>
           </div>
         </div>
       </section>
@@ -208,8 +160,6 @@ export function DivisionPage({
       )}
 
       {detail?.research && <DivisionResearchAreas research={detail.research} />}
-
-      {detail?.faculty && <DivisionFaculty faculty={detail.faculty} />}
 
       <section className="section section-warm division-page-programs">
         <div className="container">
