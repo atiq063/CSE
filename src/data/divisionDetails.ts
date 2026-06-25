@@ -719,6 +719,160 @@ export const divisionDetails: Record<string, DivisionDetail> = {
       ],
     },
   },
+  chse: {
+    intro: [
+      'The Division of Chemical and Sustainability Engineering offers one undergraduate program, the BSc in Chemical Engineering, and four graduate programs: MSc and PhD in Sustainable Energy, and MSc and PhD in Sustainable Environment.',
+      'The division brings together internationally recognized faculty with expertise spanning advanced materials, energy systems, sustainability, and process engineering. Its academic and research activities address critical challenges relevant to Qatar, the region, and the global transition toward sustainable and resilient systems.',
+    ],
+    focusAreas: [
+      'Chemical engineering',
+      'Sustainable energy',
+      'Sustainable environment',
+      'Advanced materials',
+      'Energy systems and decarbonization',
+      'Water, environment, and sustainability',
+      'Process systems engineering',
+      'Circular carbon economy',
+    ],
+    studentsAndAlumni: {
+      title: 'Preparing engineers and researchers for sustainable systems and industries',
+      intro: [
+        'The Division of Chemical and Environmental Engineering offers one undergraduate program, the BSc in Chemical Engineering, and four graduate programs: MSc and PhD in Sustainable Energy, and MSc and PhD in Sustainable Environment, all with rigorous and highly selective admission criteria.',
+        'The division actively recruits top students from Qatar, the region, and internationally, bringing together a diverse cohort with a range of academic backgrounds and nationalities.',
+      ],
+      careerPaths: [
+        'Energy and process industries, including oil and gas, petrochemicals, refining, renewable energy, solar, hydrogen, and carbon management',
+        'Environmental and sustainability services, including water and wastewater treatment, waste management and resource recovery, environmental monitoring, and impact assessment',
+        'Sustainable manufacturing and industrial systems, including advanced materials, chemicals, polymers, process industries, circular economy, and green manufacturing',
+        'Utilities and infrastructure, including power generation, desalination, gas distribution, and smart utilities',
+        'Consulting and engineering services, including technical consulting, engineering design, and project management',
+        'Healthcare and biotechnology, including pharmaceuticals, bioprocessing, and medical technologies',
+        'Government and policy roles in ministries, regulatory authorities, and environmental agencies',
+        'Academia and research careers in universities, research institutes, and R&D centers',
+        'Transportation and mobility, including sustainable fuels, aviation, automotive, and emerging mobility systems',
+        'Finance, investment, and technology strategy, including energy finance, sustainability analytics, and climate-tech investment',
+      ],
+    },
+    research: {
+      intro:
+        'The Division of Chemical and Environmental Engineering at the College of Science and Engineering brings together internationally recognized faculty with expertise spanning advanced materials, energy systems, sustainability, and process engineering. Faculty research activities are broadly organized across interconnected areas that address critical challenges relevant to Qatar, the region, and the global transition toward sustainable and resilient systems.',
+      areas: [
+        {
+          id: 'advanced-energy-systems-decarbonization',
+          title: 'Advanced Energy Systems and Decarbonization',
+          topics: [
+            'Renewable energy technologies',
+            'Hydrogen systems',
+            'Energy storage',
+            'Smart grids',
+            'Integrated low-carbon energy systems',
+          ],
+        },
+        {
+          id: 'oil-gas-industrial-process-engineering',
+          title: 'Oil, Gas, and Industrial Process Engineering',
+          topics: [
+            'Hydrocarbon processing',
+            'Process intensification',
+            'Techno-economic analysis',
+            'Cleaner and more efficient fossil-based systems',
+          ],
+        },
+        {
+          id: 'carbon-capture-utilization-circular-carbon-economy',
+          title: 'Carbon Capture, Utilization, and Circular Carbon Economy',
+          topics: [
+            'CO2 capture',
+            'Catalytic conversion',
+            'Carbon materials',
+            'Circular approaches for emissions reduction',
+          ],
+        },
+        {
+          id: 'water-environment-sustainability',
+          title: 'Water, Environment, and Sustainability',
+          topics: [
+            'Desalination',
+            'Water treatment and reuse',
+            'Environmental remediation',
+            'Air quality',
+            'Climate change mitigation',
+          ],
+        },
+        {
+          id: 'energy-water-food-nexus-resource-systems',
+          title: 'Energy-Water-Food Nexus and Resource Systems',
+          topics: [
+            'Integrated system modeling',
+            'Resource optimization',
+            'Sustainability assessment at the nexus of energy, water, and food',
+          ],
+        },
+        {
+          id: 'sustainable-manufacturing-advanced-materials',
+          title: 'Sustainable Manufacturing and Advanced Materials',
+          topics: [
+            'Nanomaterials',
+            'Membranes',
+            'Functional materials',
+            'Additive manufacturing',
+            'Materials for energy and environmental applications',
+          ],
+        },
+        {
+          id: 'process-systems-engineering-digitalization',
+          title: 'Process Systems Engineering and Digitalization',
+          topics: [
+            'Process modeling',
+            'Optimization',
+            'Control systems',
+            'Artificial intelligence',
+            'Data-driven decision-making',
+          ],
+        },
+        {
+          id: 'catalysis-reaction-engineering',
+          title: 'Catalysis and Reaction Engineering',
+          topics: [
+            'Catalytic materials',
+            'Reactor design',
+            'Electrochemical systems',
+            'Advanced conversion processes',
+          ],
+        },
+        {
+          id: 'environmental-biotechnology-waste-valorization',
+          title: 'Environmental Biotechnology and Waste Valorization',
+          topics: [
+            'Biomass conversion',
+            'Bioenergy',
+            'Waste-to-value technologies',
+            'Bioprocess engineering',
+          ],
+        },
+        {
+          id: 'sustainable-built-environment-urban-systems',
+          title: 'Sustainable Built Environment and Urban Systems',
+          topics: [
+            'Green buildings',
+            'Sustainable urban planning',
+            'Energy-efficient infrastructure',
+          ],
+        },
+        {
+          id: 'policy-economics-systems-integration',
+          title: 'Policy, Economics, and Systems Integration',
+          topics: [
+            'Energy policy',
+            'Sustainability economics',
+            'Demand-side management',
+            'Behavioral aspects',
+            'Decision-support frameworks',
+          ],
+        },
+      ],
+    },
+  },
   science: {
     intro: [
       'The Division of Science provides strong foundations in mathematics, physics, and chemistry through multidisciplinary education that combines theory, laboratory training, and practical scientific applications.',
